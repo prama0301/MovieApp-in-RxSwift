@@ -11,6 +11,7 @@ import UIKit
 struct AppUrl {
     
     struct Domains {
+     
         static let url = "https://api.themoviedb.org/3/"
         static let endPoint = "movie/popular?"
         static let baseURL = url + endPoint

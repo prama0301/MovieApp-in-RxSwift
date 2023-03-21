@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         movieTable.rx.modelSelected(Movie?.self).subscribe(onNext: {
             movieDetailItem in
             print("you Selected:", movieDetailItem?.title)
-            
+   
             guard let movieDetailVC = self.storyboard?.instantiateViewController(identifier: "MovieDetailViewController") as? MovieDetailViewController else {
                 fatalError("task controllers not found")
             }
